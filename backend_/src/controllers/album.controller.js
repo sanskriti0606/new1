@@ -1,6 +1,5 @@
-// src/controllers/album.controller.js
 
-import Album from '../models/Album.js';
+import Album from '../models/album.js'; 
 
 // Create a new album
  const createAlbum = async (req, res) => {

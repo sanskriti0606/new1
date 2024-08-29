@@ -91,7 +91,7 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:3001', 
+  origin: 'http://localhost:3000', 
   credentials: true,
 }));
 
@@ -104,7 +104,7 @@ app.get('/', (req, res) => {
   res.status(200).send('Welcome to the Spotify App');
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
